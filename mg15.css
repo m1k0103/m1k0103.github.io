@@ -93,3 +93,12 @@ dialog::backdrop{
     background-color: rgb(166, 166, 166); 
     opacity: 5%;
 }
+
+@media screen and (max-width: 1290px) and (max-height: 2796px){
+    dialog{
+        max-width: 0;
+    }
+    .card{
+        padding: 0;
+    }
+}
