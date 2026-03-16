@@ -7,7 +7,7 @@ var clickedCards = []; // An array of cards that have been clicked by a user dur
 var isGameActive = false // Signals if there is currently a game taking place
 
 
-
+// Toggles the visibility of an element by it's ID
 function toggleVisibility(elementId){
     const targetElement = document.getElementById(elementId)
     if (targetElement.style.display == "none"){
@@ -20,21 +20,7 @@ function toggleVisibility(elementId){
 }
 
 
-/* This was used for testing purposes. No longer in use.
-function generateBlankCard(newCardId){
-    var el = document.createElement("div")
-    el.className = "card"
-    el.id = `card${newCardId}`
-    
-    const imageEl = document.createElement("img")
-    imageEl.src = "/images/back.jpg"
-
-    el.append(imageEl)
-    return el
-}
-*/
-
-
+// Generates a <img> inside a <div>. This is the card; takes in a suit, value, and an ID to be assigned to the card. 
 function generateCard(suit, value, newCardId){
     var el = document.createElement("div")
     el.className = "card"
@@ -48,7 +34,7 @@ function generateCard(suit, value, newCardId){
     return el
 }
 
-
+// Populates the HTML grid with cards, based on the selected radio button.
 function populateCardGrid(){
     console.log("populating card grid")
     const size2x4 = document.getElementById("2x4")
@@ -67,8 +53,11 @@ function populateCardGrid(){
         var rowCount = 6
     }
 
+    // Resizes the grid appropriately
     resizeGridVar(4,rowCount)
 
+    // Fills in the grid with new cards, adds the card IDs to a 
+    // dict called allCardIDs which maps the cardID to the card's HTML code.
     for (var i=1; i<rowCount+1; i++){
         for (var j=0; j<4; j++){ 
             var newCardId = `card_${suits[j]}_${i}`
