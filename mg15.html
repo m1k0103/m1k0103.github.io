@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mg15.css">
+    <script src="mg15.js"></script>
+    <title>Pairs Game</title>
+</head>
+<body>
+
+    <dialog id="end-screen-modal">
+        <div class="modal-container">
+            <p style="font-size:x-large;" id="modal-text">test dialog</p>
+            <button class="game-control-button" style="background-color: green;" onclick="location.reload()">Play again</button>
+        </div>
+    </dialog>
+
+
+    <h1 class="center title">Matching Pairs Game</h1>
+
+
+    <div class="board-size-selector" id="board-size-selector">
+        <div class="board-size-selector-contents">
+
+        <h3 class="center">Select a board size</h4>
+        
+        <input type="radio" name="board-size" id="2x4" value="2x4" onclick="populateCardGrid()">
+        <label for="2x4">2x4</label>
+
+        <input type="radio" name="board-size" id="4x4" value="4x4" onclick="populateCardGrid()">
+        <label for="4x4">4x4</label>
+    
+        <input type="radio" name="board-size" id="6x4" value="6x4" onclick="populateCardGrid()">
+        <label for="6x4">6x4</label>
+        </div>
+    </div>
+
+
+    <div class="button-container" id="button-container">
+        <button class="game-control-button" type="button" onclick="shuffle()">Shuffle</button>
+        <button class="game-control-button" type="button" onclick="start()">Start</button>
+        
+    </div>
+
+
+    <div class="card-container center" id="card-container">
+    </div>
+
+
+    <div class="info-container">
+        <p>No. of clicks: <span id="click-count">0</span></p>
+        <p>No. of pairs: <span id="pair-count">0</span></p>
+    </div>
+
+</body>
+</html>
