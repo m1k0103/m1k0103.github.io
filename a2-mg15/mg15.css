@@ -1,0 +1,91 @@
+.center{
+    text-align: center;
+    margin: auto;
+}
+.title{
+    margin: 3vh;
+}
+.board-size-selector{
+    border: 1px black solid;
+    border-radius: 3px;
+    background-color: rgb(231, 231, 231);
+    width: 40vw;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    justify-self: center;
+    padding: 2vh;
+    margin: auto;
+    margin-top: 3vh;
+}
+.board-size-selector-contents{
+    margin: 2vw;
+}
+.button-container{
+    padding: 2vw;
+    text-align: center;
+}
+.game-control-button{
+    margin: 5px;
+    padding: 1vh 3vw 1vh 3vw;
+    font-size: medium;
+    background-color: rgb(100, 167, 255);
+    border-radius: 5px;
+}
+.game-control-button:hover{
+    background-color: rgb(63, 146, 255);
+}
+
+.card-container{
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: fit-content;
+    background-color: rgb(112, 147, 177);
+    text-align: center;
+    padding: 2vh 3vw 2vh 3vw;
+
+}
+.card{
+    border: 0px red solid;
+    width: fit-content;
+    padding: 10px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+
+}
+
+.card:hover{
+    cursor: pointer;
+}
+.info-container{
+    margin-top: 2vh;
+    border: 0px red solid;
+    display: flex;
+    justify-content: center;
+
+}
+.info-container p{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-weight: bold;
+    color: rgb(32, 32, 255);
+}
+dialog{
+    text-align: center;
+    position: fixed;
+    width: 15%;
+    top: 30vh;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px #888888;
+    backdrop-filter: blur(15px);
+    color: green;
+    border-color: black;
+}
+dialog::backdrop{
+    background-color: rgb(166, 166, 166); 
+    opacity: 5%;
+}
