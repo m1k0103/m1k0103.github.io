@@ -96,7 +96,7 @@ dialog::backdrop{
 
 @media  (width < 1290px) {
     dialog{
-        max-width: 0;
+        max-width: 90%;
     }
     .card{
         padding: 0;
