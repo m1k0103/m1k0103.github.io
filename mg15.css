@@ -43,7 +43,7 @@
     width: fit-content;
     background-color: rgb(112, 147, 177);
     text-align: center;
-    padding: 2vh 3vw 2vh 3vw;
+    padding: 1.5vh 2.5vw 1.5vh 2.5vw;
 
 }
 .card{
@@ -76,12 +76,16 @@
 dialog{
     text-align: center;
     position: fixed;
-    width: 15%;
-    top: 30vh;
-    left: 10%;
-    transform: translate(-50%, -50%);
+    width: fit-content;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    max-width: 30vw;
+    overflow-y: scroll;
     box-shadow: 10px 10px 5px #888888;
-    backdrop-filter: blur(15px);
     color: green;
     border-color: black;
 }
