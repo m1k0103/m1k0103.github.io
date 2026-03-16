@@ -94,9 +94,10 @@ dialog::backdrop{
     opacity: 5%;
 }
 
-@media  (width < 1290px) {
+@media  (width < 1000px) {
     dialog{
         max-width: 90%;
+        width: 100%;
     }
     .card{
         padding: 0;
